@@ -1,0 +1,14 @@
+---
+# defaults file for rexray
+rexray_version: ""
+# channel can be stable | unstable | staged
+rexray_channel: stable
+
+gce_keyfile: /etc/gcekey.json
+gce_zone: us-central1-a
+gce_defaultDiskType: pd-standard
+gce_tag: rexray
+gce_statusMaxAttempts: 10
+gce_statusInitialDelay: 100ms
+gce_statusTimeout: 2m
+gce_convertUnderscores: false
