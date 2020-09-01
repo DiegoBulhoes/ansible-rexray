@@ -1,0 +1,18 @@
+
+galaxy_info:
+  author: DiegoBulhoes - 
+  description: Ansible role to install/configure Rexray
+
+  license: license MIT
+
+  min_ansible_version: 2.9
+
+  platforms:
+    - name: debian
+      versions:
+        - 9
+        - 8
+    - name: ubuntu
+      versions:
+        - 20.04
+        - 18.04

@@ -1,0 +1,5 @@
+- name: "Provision Rexray"
+  hosts: all
+  become: yes
+  roles:
+    - role: rexray
