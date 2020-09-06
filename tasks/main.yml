@@ -16,3 +16,14 @@
   command: /tmp/install
   notify: restart rexray
   when: rexray_installed.stat.exists == False
+
+- name: Generate configuration
+  template:
+    src: rexray.yml
+    dest: /etc/rexray/
+  notify: restart rexray
+
+- name: Copy the rexray service account credential
+  copy:
+    src: "{{path_local_gce_keyfile}}"
+    dest: "{{gce_keyfile}}"
