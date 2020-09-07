@@ -11,4 +11,4 @@ gce_tag: rexray
 gce_statusMaxAttempts: 10
 gce_statusInitialDelay: 100ms
 gce_statusTimeout: 2m
-gce_convertUnderscores: false
+gce_convertUnderscores: true
